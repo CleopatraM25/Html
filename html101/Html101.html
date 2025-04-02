@@ -4,46 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90vw;
+            min-height: 100vh;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .video-container {
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-section {
+            display: flex;
+            padding: 20px;
+        }
+
+        .about-text {
+            flex: 2;
+            padding-right: 20px;
+        }
+
+        .about-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
 </head>
-<body style="font-family: Arial; margin: 0; padding: 0;">
-    <div style="width: 90vw; min-height: 100vh; margin: 0 auto;">
-        <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; border-bottom: 2px solid #ccc; margin-bottom: 20px;">
-            <p style="padding: 10px; width: 100px; text-align: center;">Cleo</p>
+<body>
+    <div class="container">
+        <header>
+            <p class="logo">Cleo</p>
             <nav>
-                <ul style="display: flex; list-style: none; gap: 20px;">
-                    <li><a href="#" style="text-decoration: none; color: #333;">Home</a></li>
-                    <li><a href="#about-me" style="text-decoration: none; color: #333;">About me</a></li>
-                    <li><a href="#contact-me" style="text-decoration: none; color: #333;">Contact me</a></li>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#contact-me">Contact me</a></li>
                 </ul>
             </nav>
         </header>
-        
-        <div style="height: 650px; display: flex; justify-content: center; align-items: center; text-align: center; margin-bottom: 50px;">
-            <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+       
+        <div class="video-container">
+            <video autoplay muted loop>
                 <source src="WhatsApp Video 2025-04-01 at 22.37.12.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        
-        <div id="about-me" style="display: flex; padding: 20px;">
-            <div style="flex: 2; padding-right: 20px;">
+       
+        <div id="about-me" class="about-section">
+            <div class="about-text">
                 <h2>Cleopatra Mahlaela</h2>
                 <p><strong>Bio</strong> - A highly motivated professional with a robust background, adept at managing high-volume workloads with ease. This individual consistently demonstrates the ability to thrive under pressure, ensuring tasks are completed efficiently and to the highest standards. Their dedication to excellence is evident in every project, making them a valuable asset to any team.</p>
                 <p>An exceptional communicator, they are deeply committed to delivering outstanding results while maintaining a positive and upbeat demeanor. With strong relationship-building skills, they foster meaningful connections, creating a collaborative and supportive work environment that drives success.</p>
             </div>
-            <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
-                <div style="width: 250px; height: 250px; display: flex; justify-content: center; align-items: center;">
-                    <img src="WhatsApp Image 2025-04-01 at 21.55.29.jpeg" alt="Picture of myself" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            <div class="about-image">
+                <div class="image-container">
+                    <img class="profile-image" src="WhatsApp Image 2025-04-01 at 21.55.29.jpeg" alt="Picture of myself">
                 </div>
             </div>
         </div>
-        
-        <div id="contact-me" style="display: flex; justify-content: space-between; padding: 20px; border-top: 1px solid #ccc;">
+       
+        <div id="contact-me" class="contact-section">
             <div>
                 <p>Contact:</p>
                 <div>
                     <div>067 172 3579</div>
-                    <div>F</div>
+                    <div>Facebook: Cleo Mahlaela</div>
                     <div>Instagram: cleo_mahlaela</div>
                 </div>
             </div>
